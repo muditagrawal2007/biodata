@@ -7,6 +7,15 @@
     <style>
         body{
             background-image:url("https://images.unsplash.com/photo-1612733569919-31dab539b82a?ixlib=rb-4.1.0&q=85&fm=jpg&crop=entropy&cs=srgb&dl=pawel-czerwinski-jrOnDAJ7jBI-unsplash.jpg");
+            opacity:0;
+            transform:translateY(30px);
+            animation: moveup 1s linear forwards;
+        }
+        @keyframes moveup{
+            100%{
+                opacity: 1;
+                transform: translateY(0);
+            }
             
         
         }
@@ -50,6 +59,7 @@
         .ima{
             display: flex;
             justify-content: space-around;
+            
         }
         .m {
         background-color: rgb(49, 197, 255);
@@ -68,7 +78,9 @@
         height: 5px;
         width:400px
   }
+  
 
+}
     </style>
 </head>
 <body>
@@ -99,7 +111,7 @@
 
             </h5></div>
             <div style="text-align: center
-            ;margin-top: 50px;"><img src="image.jpeg" alt="image" width="400" height="400" style="border-radius: 100%;border:2px solid black ">
+            ;margin-top: 50px;"><img src="image.jpeg" alt="image" width="400" height="400" style="border-radius: 100%;border:2px solid black " class="k">
             </div>
             </div>
         </div>
